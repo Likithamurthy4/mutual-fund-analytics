@@ -5,13 +5,11 @@ CREATE TABLE dim_fund (
     category TEXT,
     expense_ratio_pct REAL
 );
-
 CREATE TABLE fact_nav (
     amfi_code INTEGER,
     nav_date DATE,
     nav REAL
 );
-
 CREATE TABLE fact_transactions (
     investor_id TEXT,
     amfi_code INTEGER,
@@ -19,7 +17,6 @@ CREATE TABLE fact_transactions (
     amount_inr REAL,
     transaction_type TEXT
 );
-
 CREATE TABLE fact_performance (
     amfi_code INTEGER,
     return_1yr_pct REAL,
